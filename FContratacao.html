@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be_Contate_Já</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="shortcut icon" href="fotos/outros/favicon.png" type="image/x-icon">
+    
+</head>
+
+<body>
+    <i id="instagram" class="fa-brands fa-instagram"></i>
+    <h1 id="titulo">Bordel Encantado</h1>
+    <h1 id="subtitulo"><i>O melhor Bordel de Salvador e Região</i></h1>
+    <nav id="menu">
+        <ul>
+            <li><a href="Be_H.html" id="topicos">Home <i class="fa-solid fa-house" id="icons"></i></a></li>
+            <li><a href="Be_P.html" id="topicos">Putos <i class="fa-brands fa-hotjar" id="icons"></i></a></li>
+            <li><a href="Be_Hp.html" id="topicos">Hoteis Parceiros <i class="fa-solid fa-hotel" id="icons"></i></a></li>
+            <li><a href="Be_C.html" id="topicos">Cardápio <i class="fa-solid fa-bars" id="icons"></i></a></li>
+        </ul>
+        <div style="background-color: #202020; height: 7px">&nbsp</div>
+    </nav>
+
+    <div id="fundo">
+        <div id="div">
+            
+            <form id="forms">
+              <br />
+              <h2 id="h1">Formulário de Contratação</h2>
+              <br />
+              <div style="background-color: #b1b1b1; height: 1px; width: 335px">
+                &nbsp
+              </div>
+              <br />
+              Nome :
+              <input
+                required
+                size="30px"
+                type="text"
+                id="nome"
+                class="caixatexto"
+                placeholder="Digite aqui"
+              />
+              <br /><br />
+              E-mail :
+              <input
+                required
+                size="30px"
+                type="email"
+                id="email"
+                class="caixatexto"
+                placeholder="Digite aqui"
+              />
+        
+              <br /><br /><br />
+              
+              Data :
+              <input required type="date" id="data" class="caixatexto" id="data" />
+        
+              &nbsp Horário :
+              <input required type="time" id="hora" class="caixatexto" id="hora" />
+        
+              <br /><br /><br />
+        
+              Quantas horas serão reservadas?<br>
+              <input required type="number" id="qtdhoras" class="caixatexto" />
+        
+              <br /><br /><br />
+              
+              Escolha Seu Puto :
+              <select required id="putos"  class="caixatexto" >
+                  <option value=""></option>
+                <option value="700">Jonzinho</option>
+                <option value="700">Fernando</option>
+                <option value="700">Carlos</option>
+                <option value="700">Paulão</option>
+                <option value="700">Vitão</option>
+                <option value="700">Kiq</option>
+                <option value="900">Fofinho</option>
+                <option value="700">André</option>
+            </select>
+              <br /><br /><br>
+        
+              Pessoas envolvidas :
+              <input required type="number" class="caixatexto" id="qtdpessoas" />
+              <br><br><br>
+              Plano de contingência contra cônjuges (+ R$500.00) :<br>
+              
+              <select required id="planocontingencia" class="caixatexto">
+                <option value=""></option>
+                <option value="true">Sim</option>
+                <option value="false">Não</option>
+            </select>
+            
+            
+            
+            
+            
+            <br><br>
+            Preferência:
+            <select required id="preferencia" class="caixatexto" >
+                <option value=""></option>
+                <option value="Versatil">Versatil</option>
+                <option value="Ativo">Ativo</option>
+                <option value="Passivo">Passivo</option>
+            </select>
+            
+            <br><br><br>
+            
+            
+            Quais as suas Demandas?
+                  <br>
+                  <textarea id="demandas" cols="67" rows="5"
+                  style="margin-top: 9px; border-color: rgb(255, 146, 95); outline: none; padding: 5px;"></textarea>
+                  
+                  <br><br><br>
+                  Forma de Pagamento:
+                  <select required name="fpagamento" id="fpagamento">
+                      <option value=""></option>
+                      <option value="cartão">Cartão</option>
+                          <option value="dinheiro">Dinheiro</option>
+                          <option value="pix">Pix</option>
+                        </select>
+                        
+                        <br><br>
+                        <input class="calcularprograma| button" id="calcularprograma" type="button" value="Calcular Programa">
+                        <br><br>
+                        <fieldset  id="total" style="padding: 7px;  border-color: rgb(255, 146, 95);">
+                            Valor Total:
+                        </fieldset>
+
+                        <br><br>
+                        
+                    <input type="button" value="Finalizar Reserva" class="button" onclick="reserva()">
+                        <br><br>
+                        <p style="text-align: center; color: #181818; font-size: 13px;">© Bordel Encantado, 2022. Todos os direitos
+                            reservados. |</p>
+                        </p>
+                    </div>
+                </div>
+
+                <br>
+                <div style="background-color: #3b3b3b; height: 1px;">&nbsp</div>
+                <div class="rodape">
+        <br>
+        <h3 style="font-family: 'Poppins', sans-serif; font-weight: 600;">Contato</h3><br>
+        <p style="font-family: 'Poppins', sans-serif; font-size: 13px;">(71) 96962-6969</p>
+    </div>
+
+    <div class="rodape" style="float: left; padding-right: 80px; padding-bottom: 50px;">
+        <br>
+        <h3 style="font-family: 'Poppins', sans-serif; font-weight: 600;">Localização<i
+            class="fa-solid fa-location-dot"></i></h3>
+            <p style="font-family: 'Poppins', sans-serif; font-size: 13px;">
+            <br>R. Paula Tejano, 69<br>
+            Próximo da Casado Caralho,
+            <br>De frente de Onde Judas Perdeu as Botas.<br><br><br>
+        </p>
+    </div>
+
+    <div class="rodape" style="position: relative; top: -80px;">
+        <br>
+        <h3 style="font-family: 'Poppins', sans-serif; font-weight: 600;">Horas de Operação</h3>
+        <p style="font-family: 'Poppins', sans-serif; font-size: 13px;">
+            <br>Terça à sexta
+            <br>18:00 | 7AM
+            <br><br>Sábado à domingo
+            <br>17:00 | 9AM
+            <br><br>* Fechado nas segundas
+        </p>
+    </div>
+    <div class="rodape" style="position: relative; top: -285px;left: 250px; display: inline-block;">
+        <br>
+        <h3 style="font-family: 'Poppins', sans-serif; font-weight: 600;">Trabalhe Conosco</h3>
+        <br><br>
+        <P style=" display: inline-block; font-family:'Poppins', sans-serif; font-size: 13px;"> Ou clique </P> <a
+        style="text-decoration: none; color: white;" href="https://forms.office.com/r/x4TNvQZy4y" target="_blank">
+        AQUI</a>
+    </div>
+    <br><br><br>
+    <script src="JS.js"></script>
+</body>
+
+</html>
